@@ -113,13 +113,13 @@ checkpoint_path = './checkpoints'
 You can then begin training:
 
 ```bash
-python main.py --start-epoch=0, add-epochs=100 --save-every 5
+python main.py --start-epoch=0 --add-epochs=100 --save-every 5
 ```
 
 If you have limited RAM you might need to limit the number of images loaded into memory at once, e.g.
 
 ```bash
-python main.py --start-epoch=0 add-epochs=100 --save-every 5 --max-images 20000
+python main.py --start-epoch=0 --add-epochs=100 --save-every 5 --max-images 20000
 ```
 
 I have 12GB which works for around 60,000 images.
